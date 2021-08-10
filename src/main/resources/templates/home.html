@@ -27,10 +27,10 @@
 
                     <tbody>
                     <tr  th:each="x : ${ListToDo}">
-                        <td th:text="${x.tid}">Employee ID</td>
-                        <td th:text="${x.name}">Employee Name</td>
-                        <td th:text="${x.desc}">Mobile</td>
-                        <td th:text="${x.status}">Salary</td>
+                        <td th:text="${x.tid}">id</td>
+                        <td th:text="${x.name}">Name</td>
+                        <td th:text="${x.desc}">Desc</td>
+                        <td th:text="${x.status}">status</td>
                         <td>
                             <a th:href="@{'/edit/' + ${x.tid}}">Edit</a>
                         </td>
